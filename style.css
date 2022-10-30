@@ -90,7 +90,7 @@ h2 {
     gap: 30px;
 }
 
-button {
+button.weapon {
     /* height: auto; */
     background-color: black;
     border: 5px black solid;
@@ -98,7 +98,7 @@ button {
     transition: 0.2s ease-in-out;
 }
 
-button:hover {
+button.weapon:hover {
     transform: scale(1.1);
     box-shadow: 5px 5px 10px  black; ;
     cursor: pointer;
@@ -118,4 +118,57 @@ footer {
     text-align: center;
     height: 30px;
     margin-top: auto;
+}
+
+/* modal */
+
+#modal{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: var(--white);
+    z-index: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 35px;
+
+    height: 150px;
+    width: 250px;
+    border-radius: 25px;
+    visibility: hidden;
+
+}
+
+
+
+#modal button {
+    /* border: ; */
+    font-size: 15px;
+    border-radius: 15px;
+    padding: 5px 10px;
+    background-color: var(--white);
+}
+
+#modal button:hover{
+    cursor: pointer;
+    background-color: rgba(0,0,0, 0.1);
+    transform: scale(1.05);
+}
+
+#modal h3 {
+font-size: 30px;
+
+}
+#blocker {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0, 0.5);
+    visibility: hidden;
 }
