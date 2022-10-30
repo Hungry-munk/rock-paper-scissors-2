@@ -23,10 +23,16 @@ body {
     padding: 0;
 }
 
+html {
+    height: 100%;
+}
+
 body{
-    height: 100vh;
+    height: 100%;
     font-family: 'Poppins', sans-serif;
     background-color: var(--white);
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -40,14 +46,42 @@ header {
 }
 
 main {
-
+ display: flex;
+ flex-direction: column;
+ gap: 50px
+;
 }
 #header2-container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: 25px;
+    margin-top: 50px;
 }
+
+h2 {
+    font-size: 40px;
+}
+
+#header2-container div {
+    font-size: 25px;
+}
+
+#game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.score-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 
 #weapon-container {
     display: flex;
@@ -74,9 +108,14 @@ button:hover {
     height: 100px;
 }
 
+#game-report {
+    text-align: center;
+    font-size: 25px;
+}
+
 footer {
     position: relative;
     text-align: center;
-    height: 55px;
+    height: 30px;
     margin-top: auto;
 }
