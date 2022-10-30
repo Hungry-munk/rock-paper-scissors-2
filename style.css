@@ -40,7 +40,38 @@ header {
 }
 
 main {
-    
+
+}
+#header2-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#weapon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+button {
+    /* height: auto; */
+    background-color: black;
+    border: 5px black solid;
+    border-radius: 20px;
+    transition: 0.2s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 5px 10px  black; ;
+    cursor: pointer;
+}
+
+.weapon {
+    height: 100px;
 }
 
 footer {
